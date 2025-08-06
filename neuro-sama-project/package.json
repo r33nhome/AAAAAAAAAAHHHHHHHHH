@@ -1,0 +1,71 @@
+{
+  "name": "vedal-inspired-neuro-sama-system",
+  "version": "2.0.0",
+  "description": "Vedal-inspired AI VTuber System with Long-Term Memory (JavaScript Coordination Layer)",
+  "main": "src/websocket-hub.js",
+  "scripts": {
+    "start": "node src/websocket-hub.js",
+    "dev": "nodemon src/websocket-hub.js",
+    "test": "jest --testPathPattern=tests/",
+    "build": "webpack --mode production",
+    "lint": "eslint src/ --ext .js,.ts",
+    "format": "prettier --write src/**/*.{js,ts}",
+    "start:hub": "node src/services/websocket-hub.js",
+    "start:admin": "node src/services/admin-interface.js",
+    "start:obs": "node src/services/obs-controller.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "vedal", 
+    "neuro-sama", 
+    "ai-vtuber", 
+    "long-term-memory", 
+    "websocket-coordination",
+    "multi-language-integration"
+  ],
+  "author": "Vedal-Inspired Development Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "ws": "^8.14.0",
+    "obs-websocket-js": "^5.0.3",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "redis": "^4.6.8",
+    "winston": "^3.10.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "rate-limiter-flexible": "^2.4.2",
+    "uuid": "^9.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "ts-loader": "^9.4.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/vedal-inspired-neuro-system"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/vedal-inspired-neuro-system/issues"
+  }
+}
