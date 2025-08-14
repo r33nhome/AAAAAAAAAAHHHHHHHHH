@@ -1,0 +1,2 @@
+[console_scripts]
+bot = apps.discord_bot.bot:main
